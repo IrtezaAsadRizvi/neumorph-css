@@ -1,0 +1,28 @@
+// get the values from - https://neumorphism.io/$light-shine
+@mixin nm-light {
+    background: $light;
+    color: $black;
+    box-shadow:  0.3rem 0.3rem 0.6rem $light-shadow, -0.2rem -0.2rem 0.5rem $light-shine;
+}
+@mixin nm-light-inside {
+    background: $light;
+    color: $black;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem $light-shadow, inset -0.2rem -0.2rem 0.5rem $light-shine;
+}
+@mixin nm-primary {
+    background: $primary;
+    color: $white;
+    box-shadow: inset 0.2rem 0.2rem 1rem $primary-shine, inset -0.2rem -0.2rem 1rem $primary-shadow, 0.3rem 0.3rem 0.6rem $light-shadow, -0.2rem -0.2rem 0.5rem $light-shine;
+}
+@mixin nm-primary-inside {
+    background: $primary;
+    color: $white;
+    box-shadow: inset 0.2rem 0.2rem 1rem $primary-shadow, inset -0.2rem -0.2rem 1rem $primary-shine;
+}
+
+
+
+
+.nm-light {
+    @include nm-light;
+}
